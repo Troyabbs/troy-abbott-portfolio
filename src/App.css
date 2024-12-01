@@ -2,37 +2,134 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: calc(3rem + 20px); /* 20px accounts for scrollbar width */
 }
 
-.App-header {
-  background-color: #282c34;
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.header nav a:hover {
+  color: #007bff;
+}
+
+main {
+  padding-top: 80px;
+}
+
+.hero {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+  background-image: url('../banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  position: relative;
+  padding-left: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero h1, .hero h2, .hero p {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  max-width: 1100px;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.hero p {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.section {
+  padding: 5rem 2rem;
+}
+
+.section:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.skill-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px  rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.skill-item h3 {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.skill-item p {
+  color: #000000;
 }
