@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/troy-abbott-portfolio/static/css/main.5eb16d92.css",
+    "main.js": "/troy-abbott-portfolio/static/js/main.6486fc9e.js",
+    "static/media/banner5.jpg": "/troy-abbott-portfolio/static/media/banner5.b6ccbb144b1f3e5ade1e.jpg",
+    "index.html": "/troy-abbott-portfolio/index.html",
+    "main.5eb16d92.css.map": "/troy-abbott-portfolio/static/css/main.5eb16d92.css.map",
+    "main.6486fc9e.js.map": "/troy-abbott-portfolio/static/js/main.6486fc9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5eb16d92.css",
+    "static/js/main.6486fc9e.js"
+  ]
+}
